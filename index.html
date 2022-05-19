@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <meta charset="UTF-8">
+  <title>Findajob</title>
+  <link rel="icon" href="./imgs/logo.jpeg" type="image/icon type">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class='login' id='login'>
+  <div class='head'>
+  <!-- <h1 class='company'> -->
+    <img src="./imgs/tlogo.png" alt="no"  class="tlogo">
+  <!-- </h1> -->
+  </div>
+  <p class='msg'>Welcome Here get Training Acc. to your Field</p>
+  <div class='form'>
+    <form>
+  <input type="text" placeholder='Username' name="userid" class='text' id='username' required><br>
+  <input type="password" placeholder='••••••••••••••' name="pswrd" class='password'><br>
+ 
+  <input  class='btn-login' id='do-login' type="button" onclick="check(this.form)"  value="Login"/>
+            <input class='forgot' type="reset" value="Forgot?"/>
+    </form>
+  </div>
+</section>
+<script language="javascript">
+	function check(form) { /*function to check userid & password*/
+		/*the following code checkes whether the entered userid and password are matching*/
+		if(form.userid.value == "arni" && form.pswrd.value == "arni123") {
+		/*opens the target page while Id & password matches*/
+		swal("Good job!", "You loging in", "success");
+			window.open("home.html","_self")
+		}
+		else {
+			swal("Error","Enter Valid Username or Password",{icon: "error",})/*displays error message*/
+		}	
+}
+</script>
+<footer>
+  <p>Made by <span class='heart'>&hearts;</span> Subhanshi Sharma</p>
+  <!-- <p>Gradient: <a href='https://uigradients.com/#Turquoiseflow'>https://uigradients.com/#Turquoiseflow</a></p> -->
+</footer>
+<!-- partial -->
+  <!-- <script  src="./script.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,404 @@
+                        * {
+                            margin: 0;
+                        }
+                        
+                        .sidebar {
+                            height: 100%;
+                            width: 0;
+                            position: fixed;
+                            z-index: 1;
+                            top: 0;
+                            left: 0;
+                            background-color: #111;
+                            overflow-x: hidden;
+                            transition: 0.5s;
+                            padding-top: 60px;
+                        }
+                        
+                        .sidebar a {
+                            padding: 8px 8px 8px 32px;
+                            text-decoration: none;
+                            font-size: 25px;
+                            color: #818181;
+                            display: block;
+                            transition: 0.3s;
+                        }
+                        
+                        .sidebar a:hover {
+                            color: #f1f1f1;
+                        }
+                        
+                        .sidebar .closebtn {
+                            position: absolute;
+                            top: 0;
+                            right: 25px;
+                            font-size: 36px;
+                            margin-left: 50px;
+                        }
+                        
+                        .openbtn {
+                            font-size: 20px;
+                            cursor: pointer;
+                            background-color: #111;
+                            color: white;
+                            padding: 10px 15px;
+                            border: none;
+                        }
+                        
+                        .openbtn:hover {
+                            background-color: #444;
+                        }
+                        
+                        #main {
+                            transition: margin-left .5s;
+                            padding: 16px;
+                        }
+                        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+                        
+                        @media screen and (max-height: 450px) {
+                            .sidebar {
+                                padding-top: 15px;
+                            }
+                            .sidebar a {
+                                font-size: 18px;
+                            }
+                        }
+                        
+                        .logo {
+                            width: 10rem;
+                            margin-left: 2rem;
+                        }
+                        
+                        .imgs {
+                            width: 100%;
+                        }
+                        
+                        .heading {
+                            padding: 3rem;
+                        }
+                        /* cupon................................................! */
+                        
+                        .coupon {
+                            border: 5px dotted #bbb;
+                            width: 80%;
+                            border-radius: 15px;
+                            margin: 0 auto;
+                        }
+                        
+                        .container {
+                            padding: 2px 16px;
+                            background-color: #f1f1f1;
+                        }
+                        
+                        .promo {
+                            background: #ccc;
+                            padding: 3px;
+                        }
+                        
+                        .expire {
+                            color: red;
+                        }
+                        
+                        .head {
+                            font-size: 20px;
+                        }
+                        
+                        .btn {
+                            padding: .5rem 1rem;
+                            float: right;
+                            background-color: white;
+                            border-radius: 5px;
+                            border-color: aqua;
+                            color: aqua;
+                        }
+                        
+                        .btn:hover {
+                            border-color: rgb(24, 109, 109);
+                            color: rgb(24, 109, 109);
+                            text-decoration: none;
+                        }
+                        /* card for trainings  */
+                        
+                        .card {
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                            max-width: 300px;
+                            margin: auto;
+                            text-align: center;
+                            font-family: arial;
+                        }
+                        
+                        .price {
+                            color: grey;
+                            font-size: 22px;
+                        }
+                        
+                        .card button {
+                            border: none;
+                            outline: 0;
+                            padding: 12px;
+                            color: white;
+                            background-color: #000;
+                            text-align: center;
+                            cursor: pointer;
+                            width: 100%;
+                            font-size: 18px;
+                        }
+                        
+                        .card button:hover {
+                            opacity: 0.7;
+                        }
+                        
+                        .cont {
+                            display: flex;
+                        }
+                        /* end cards */
+                      
+    .cont-001{
+        width: 100%;
+        background: url('./imgs/img6.jpg');
+    }
+    .title
+    {
+        text-align: center;
+    }
+    /* annimations */
+    .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.slogon
+{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin: 2rem;
+    color: 2e4958;
+}
+/* the card................................................................................... */
+
+  .container-fluid {
+    position: absolute;
+    display: flex;
+    /* left: 50%;
+    top: 50%; */
+    /* transform: translateY(-50%) translateX(-50%); */
+    width: 100%;
+  }
+  .media {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  figure {
+    height: 370px;
+    overflow: hidden;
+    position: relative;
+  }
+  figure a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  figure:hover .media {
+    transform: scale(1.25);
+  }
+  figcaption {
+    color: #252830;
+    height: calc(100% - 30px);
+    margin: 15px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 250px;
+  }
+  .body {
+    background-color: white;
+    bottom: 0;
+    padding: 15px;
+    font-size: 1.2rem;
+    position: absolute;
+    width: 100%;
+  }
+  svg {
+    height: inherit;
+    width: 100%;
+  }
+  svg text {
+    text-anchor: middle;
+  }
+  svg #alpha {
+    fill: white;
+  }
+  svg .title {
+    font-size: 25px;
+    font-family: "Montserrat";
+    letter-spacing: 5px;
+  }
+  svg #base {
+    fill: white;
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+  }
+  .slogon-1
+  {
+      margin-top: 27rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.2rem;
+  }
+ .s01
+ {
+     font-size: 1.5rem;
+     font-weight: bold;
+ }
+ .s02
+ {
+     text-align: justify;
+ }
+ .c-heading
+ {
+     text-align: center;
+ }
+ .offer
+ {
+     /* background-color: #818181; */
+     padding: 2rem 10rem 2rem ;
+     font-size: 1.2rem;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     text-align: justify;
+
+ }
+ .button01
+ {
+     margin-right: 2rem;     
+ }
+ .inbtn
+ {
+     background-color: transparent;
+     border: none;
+     
+ }
+ .tlogo
+ {
+     width: 2rem;
+ }
+ /* footer */
+ @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+ /* end footer */

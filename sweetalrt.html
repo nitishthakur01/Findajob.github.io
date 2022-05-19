@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findajob</title>
+    <link rel="icon" href="./imgs/logo.jpeg" type="image/icon type">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+
+</head>
+<body>
+    
+    <!-- sweet alert //////////// -->
+<script>
+window.addEventListener('load',function()
+{
+
+
+{
+swal({
+title: "Are you sure?",
+text: "Are You really wants to Logging out!",
+icon: "warning",
+buttons: true,
+dangerMode: true,
+
+})
+.then((willDelete) => {
+if (willDelete) {
+swal("Ok...! You are loged out", {
+icon: "success",
+});
+window.open("index.html","_self")
+} else {
+swal("Process has been Cancelled!",{icon: "error",});
+window.open("home.html","_self")
+
+}
+});
+}})
+</script>
+</body>
+</html>
